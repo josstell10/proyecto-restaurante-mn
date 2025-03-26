@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+    </div>
+    <div style="text-align: center;">
+        <h1>Contactanos</h1>
+        <p>Atendemos de Lunes a Viernes de 8am a 10pm</p>
+        <img src="../imagenes/contacto.jpg" width="30%">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31723.253475103997!2d-75.57918642568356!3d6.341342300000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f3c342c37c1%3A0xe226d8cb41a35c!2sTradiciones%20Restaurante%20Bar!5e0!3m2!1ses!2sco!4v1742952468679!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div style="text-align: center;">
+        <h2 style="margin: 20px 0;">Formulario de contacto</h2>
+        <form method="post">
+            <label>Ingrese su nombre:</label>
+            <input name="nombre" required type="text" placeholder="En Mayusculas"> <br>
+            <label>Ingrese su edad:</label>
+            <input name="edad" type="number" min="18" max="50" required> <br>
+            <label>Ingrese un Telefon o Celular:</label>
+            <input name="telefono" type="tel" required> <br>
+            <label>Ingrese su fecha de Nacimiento:</label>
+            <input name="fecha" type="date" min="1950-01-01" max="2006-12-31"> <br>
+            <label>Selecciona una foto:</label>
+            <input name="foto" type="file" accept=".jpg, .png, .gif" max="1024kb"> <br>
+            <label>Seleccina tu genero:</label> <br>
+            <input type="radio" value="Hombre" name="genero">Hombre
+            <input type="radio" value="Mujer" name="genero">Mujer
+            <input type="radio" value="Otro" name="genero">Otro
+            <input type="radio" value="No sabe" name="genero">No sabe / No Responde <br><br>
+            <label>Seleciona como deseas que te contacten:</label> <br>
+            <input type="checkbox" name="contacto" value="Email">Email
+            <input type="checkbox" name="contacto" value="Telefono">Telefono
+            <input type="checkbox" name="contacto" value="Paloma">Paloma Mensajera
+            <input type="checkbox" name="contacto" value="Humo">Señales de Humo <br><br>
+            <label>Selecciona un almuerzo:</label> <br>
+            <select name="almuerzo">
+                <option value="" selected>Seleccionar</option>
+                <option value="Sancocho">Sancocho</option>
+                <option value="Bandeja">Bandeja Paisa</option>
+                <option value="Ajiaco">Ajiaco</option>
+            </select> <br> <br>
+            <label>Observacion o sugerencia:</label> <br>
+            <textarea maxlength="200" name="Observacion" cols="10" rows="3"></textarea> <br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+        <br><br><br><br><br>
+    </div>
+</body>
+</html>
